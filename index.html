@@ -7,23 +7,29 @@
     <title>Typing Speed Test</title>
   </head>
   <body>
+    <h1><u>Typing Speed Test</u></h1>
+    <!-- Paragraph container -->
     <div class="container">
-      <h1>Typing Speed Test</h1>
-
       <div id="typing-area">
-        <p id="sentence"></p>
-        <input type="text" id="input" disabled />
-
-        <button id="start-btn">Start Test</button>
+        <p id="sentence">
+          Often called Lord Krishna, he is one of the most widely worshiped and popular Hindu deities. Krishna is the eighth avatar (or incarnation) of Vishnu. He was deified in the 5th century and since then has also been worshiped as the supreme god himself. Krishna is the Hindu god of compassion, protection, and love.
+        </p>
+        <div id="inputStart">
+          <input type="text" id="input" disabled />
+          <button id="start-btn">Start Test</button>
+        </div>
         <p id="timer"></p>
       </div>
+    </div>
 
-      <div id="result">
-        <h2>Test Result</h2>
-        <p>Typing Speed: <span id="speed"></span> WPM</p>
-        <p>Accuracy: <span id="accuracy"></span>%</p>
-        <button id="retry-btn">Retry Test</button>
+    <!-- Result container -->
+    <div id="result">
+      <h2><u>Test Result</u></h2>
+      <div id="speedAccuracy">
+        <p><u>Typing Speed: </u> <span id="speed"></span> WPM</p>
+        <p><u>Accuracy: </u> <span id="accuracy"></span>%</p>
       </div>
+      <button id="retry-btn">Retry Test</button>
     </div>
 
     <script src="script.js"></script>

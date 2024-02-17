@@ -1,47 +1,133 @@
-*{
+* {
   user-select: none;
+  box-sizing: border-box;
 }
 
-*::selection{
+*::selection {
   background: none;
 }
 
-*::-moz-selection{
+*::-moz-selection {
   background: none;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(102, 105, 108);
 }
-.container {
+h1 {
+  text-align: center;
+  /* left: 25%; */
+  color: rgb(234, 238, 241);
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container,
+#result {
   display: flex;
   flex-flow: column;
   text-align: center;
   position: relative;
   left: 25%;
-  top: 30px;
+  top: 20px;
   width: 50%;
   background-color: aqua;
+  background-color: white;
   border-radius: 15px;
   box-shadow: 10px 6px 8px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  padding: 10px;
 }
+
+#sentence {
+  text-align: justify;
+  /* border: 1px solid black; */
+  padding: 10px;
+  border-radius: 10px;
+  /* display: none; */
+  font-size: 22px;
+  background-color: rgb(244, 244, 244);
+}
+
 input {
-  height: 20px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: antiquewhite;
 }
+
 button {
   text-decoration: none;
   border-style: none;
-  border: 1px solid rgb(1, 208, 208);
+  /* border: 1px solid rgb(1, 208, 208); */
   background-color: aqua;
-  box-shadow: 10px 6px 8px 2px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 10px 6px 8px 2px rgba(0, 0, 0, 0.2); */
   font-size: 16px;
-}
-#typing-area {
-  margin-bottom: 20px;
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 3px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
 }
 
+/* #typing-area {
+  /* margin-bottom: 10px; */
+/* } */ 
+
+#inputStart {
+  display: flex;
+  flex-direction: column;
+}
+#input {
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(244, 244, 244);
+
+}
+#start-btn {
+  margin-top: 20px;
+  width: 29%;
+  position: relative;
+  top: 10%;
+  left: 39%;
+}
 #result {
   display: none;
-  margin-top: 20px;
+  margin-top: 40px;
+  border: 1px solid black;
+  background-color: rgb(240, 234, 234);
+  padding: 10px;
+  padding-bottom: 15px;
+  font-size: 19px;
+  width: 33%;
+  left: 33%;
+}
+
+#result h2 {
+  text-decoration: solid;
+  color: brown;
+  font-size: 34px;
+}
+
+#speedAccuracy {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+#timer {
+  font-size: 24px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+
+  left: 39%;
+  padding: 4px;
 }
